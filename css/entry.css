@@ -1,0 +1,430 @@
+body{
+	margin: 0px;
+}
+
+/*TOP ITEMS*/
+.cover{
+  position: fixed;
+  height: 2000px;
+  width: 100%;
+  background-color: white;
+  z-index: 2000;
+  opacity: 1;
+}
+
+.entry-link-left, .entry-link-right{
+	position: fixed;
+	background-color: transparent;
+	width: 110px;
+	height: 100%;
+}
+
+.entry-link-left{
+	left: 0;
+	cursor: url(../images/arrow-l.png), auto;
+}
+
+.entry-link-right{
+	right:0;
+	cursor: url(../images/arrow-r.png), auto;
+}
+
+.top-title-box{
+  position: fixed;
+  width: 1060px;
+  left: 50%;
+  margin: 0 0 0 -530px;
+  padding-top: 10px;
+  height: 60px;
+  top: 0;
+}
+
+.top-title, .top-quote, .top-back{
+  display: inline-block;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.top-title{
+  right: 0;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 6px 0px 6px 6px;
+}
+
+.top-quote{
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  margin-top: 29px;
+  padding-top: 6px;
+  opacity: 0;
+  color: #ffad8a;
+}
+
+.top-back{
+  left: 0;
+  font-weight: 600;
+  font-size: 11px;
+  margin-top: 29px;
+  padding-top: 6px;
+  opacity: 1;
+  color: #ffad8a;
+}
+
+.entry-number{
+	color: #ffd1bd;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+ 	color: #ffd1bd;
+}
+
+.eye-open{
+	cursor: url(../images/eye-open.png), auto;
+}
+
+.eye-open2{
+	cursor: url(../images/eye-open2.png), auto;
+}
+
+.eye-closed{
+	cursor: url(../images/eye-closed.png), auto;
+}
+
+/*BOTTOM ITEMS*/
+.divider{
+	font-weight: 400;
+	color: #ffd1bd;
+}
+
+.bottom-text{
+	position: fixed;
+  	bottom: 55px;
+  	width: 1060px;
+  	left: 50%;
+ 	margin: 0 0 0 -530px;
+  	font-family: 'Montserrat', sans-serif;
+  	cursor: default;
+}
+
+.wrapper{
+	padding: 6px;
+}
+
+.division-left, .division-right, .filter-obj, .filter-title{
+	display: inline-block;
+}
+
+.division-left{
+	position: absolute;
+	left: 0;
+}
+
+.address{
+	font-size: 11px;
+	font-weight: 600;
+	padding-top: 3px;
+}
+
+.division-right{
+	position: absolute;
+	right: 0;
+}
+
+.filter-title{
+	font-weight: 600;
+  	font-size: 14px;
+  	padding-left: 10px;
+}
+
+.filter-obj{
+	font-size: 10px;
+    font-weight: 400;
+    padding: 1px 7px 2px 7px;
+    vertical-align: middle;
+}
+
+/*ENTRY ITEMS*/
+.entry{
+	position: absolute;
+	top: 71px;
+  	left: 50%;
+ 	margin: 0 0 0 -530px;
+	width: 1060px;
+	height: 556px;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 500;
+
+}
+
+.entry-layer{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+/*	background-color: rgba(0,0,0,0.5);*/
+	background-color: transparent;
+}
+
+.original, .edit{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin-top: -50px;
+}
+
+.original{
+/*	z-index: 20;*/
+	z-index: 10; /*this is changed*/
+	opacity: 1;
+}
+
+.edit{
+/*	z-index: 10;*/
+	z-index: 15; /*this is changed*/
+	opacity: 0;
+}
+
+.zoom{
+/*	z-index: 5;
+	opacity: 1;*/
+	z-index: 20; /*this is changed*/
+/*	z-index: 15;*/
+	opacity: 0;
+}
+
+.zoom{
+	position: absolute;
+	height: auto;
+	width: 100%;
+}
+
+.zoom-box{
+	position: absolute;
+	display: none;
+	z-index: 200;
+/*	background-color: rgba(255,0,0,0.5);*/
+	background-color: transparent;
+}
+
+
+
+/*SPECIFIED ENTRY CSS*/
+
+.zoom-box1{
+	left: 60%;
+	height: 54%;
+	width: 20%;
+	top: 34%;
+}
+
+.zoom-box2{
+	left: 43%;
+	height: 20%;
+	width: 10%;
+	top: 42%;
+}
+
+.zoom-box3{
+	bottom: 40px;
+	left: 45%;
+	height: 200px;
+	width: 140px;
+}
+
+.zoom-box4{
+	left: 23%;
+	height: 46%;
+	width: 15%;
+	top: 26%;
+}
+
+.zoom-box5{
+	left: 48%;
+	height: 15%;
+	width: 7%;
+	top: 48%;
+}
+
+.zoom5{
+	margin-top: -100px;
+}
+
+.zoom-box6{
+	left: 52%;
+	height: 15%;
+	width: 7%;
+	top: 76%;
+}
+
+.zoom-box7{
+	left: 42%;
+	height: 35%;
+	width: 14%;
+	top: 34%;
+}
+
+.zoom-box8{
+	left: 45%;
+	height: 17%;
+	width: 8%;
+	top: 66%;
+}
+
+.zoom-box9{
+	left: 57%;
+	height: 18%;
+	width: 8%;
+	top: 78%;
+}
+
+.zoom-box10{
+	left: 31%;
+	height: 22%;
+	width: 8%;
+	top: 76%;
+}
+
+.zoom-box11{
+	left: 45%;
+	height: 49%;
+	width: 15%;
+	top: 35%;
+}
+
+.zoom11{
+	margin-top: -100px;
+}
+
+.zoom-box12{
+	left: 16%;
+	height: 47%;
+	width: 15%;
+	top: 45%;
+}
+
+.zoom12{
+	margin-top: -100px;
+}
+
+.zoom-box13{
+	left: 39%;
+	height: 60%;
+	width: 20%;
+	top: 40%;
+}
+
+.zoom-box14{
+	left: 48%;
+	height: 27%;
+	width: 8%;
+	top: 59%;
+}
+
+.zoom-box15{
+	left: 53%;
+	height: 27%;
+	width: 12%;
+	top: 65%;
+}
+
+.zoom-box16{
+	left: 53%;
+	height: 22%;
+	width: 8%;
+	top: 26%;
+}
+
+.zoom-box17{
+	left: 63%;
+	height: 33%;
+	width: 10%;
+	top: 20%;
+}
+
+.zoom17{
+	margin-top: -100px;
+}
+
+.zoom-box18{
+	left: 38%;
+	height: 33%;
+	width: 8%;
+	top: 45%;
+}
+
+.zoom18{
+	margin-top: -100px;
+}
+
+.zoom-box19{
+	left: 40%;
+	height: 54%;
+	width: 12%;
+	top: 17%;
+}
+
+.zoom-box20{
+	left: 58%;
+	height: 23%;
+	width: 8%;
+	top: 48%;
+}
+
+.original1, .edit1, .zoom1{
+	margin-top: -100px;
+}
+
+.original9, .edit9, .zoom9{
+	margin-top: -100px;
+}
+
+.original10, .edit10, .zoom10{
+	margin-top: -100px;
+}
+
+.original14, .edit14, .zoom14{
+	margin-top: -80px;
+}
+
+.original15, .edit15, .zoom15{
+	margin-top: -100px;
+}
+
+.original16, .edit16, .zoom16{
+	margin-top: -90px;
+}
+
+.original19, .edit19, .zoom19{
+	margin-top: -80px;
+}
+
+.original20, .edit20, .zoom20{
+	margin-top: -100px;
+}
+
+/* MAKE A DIFFERENT CLASS OF ZOOM FOR EACH ENTRY with ZOOM# */
+.zoom3{
+	margin-top: -100px;
+}
+
+.zoom4{
+	margin-top: -100px;
+}
+/******/
+
+
